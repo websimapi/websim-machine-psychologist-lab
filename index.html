@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Psychologist Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Machine Psychologist Lab</h1>
+            <p>Explore LLM behavior through psychology-inspired experiments</p>
+        </header>
+        
+        <main>
+            <div class="experiment-panel">
+                <h2>Experimental Paradigms</h2>
+                <div class="experiment-buttons">
+                    <button data-experiment="cognitive-bias">Cognitive Biases</button>
+                    <button data-experiment="moral-dilemmas">Moral Dilemmas</button>
+                    <button data-experiment="reasoning-tasks">Reasoning Tasks</button>
+                    <button data-experiment="creative-thinking">Creative Thinking</button>
+                    <button data-experiment="custom">Custom Experiment</button>
+                </div>
+                
+                <div class="experiment-setup">
+                    <h3 id="experiment-title">Select an experiment</h3>
+                    <div id="experiment-description"></div>
+                    
+                    <div class="prompt-container">
+                        <textarea id="prompt-input" placeholder="Enter your prompt or question for the LLM..."></textarea>
+                        <button id="run-experiment">Run Experiment</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-panel">
+                <h2>Experimental Results</h2>
+                <div class="chat-container">
+                    <div id="conversation-history"></div>
+                </div>
+                
+                <div class="analysis-tools">
+                    <h3>Analysis</h3>
+                    <div class="analysis-options">
+                        <button id="analyze-sentiment">Sentiment Analysis</button>
+                        <button id="analyze-reasoning">Reasoning Patterns</button>
+                        <button id="export-results">Export Results</button>
+                    </div>
+                    <div id="analysis-results"></div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Based on research about applying psychological methods to understand LLM behavior</p>
+            <p><small>Credits: Inspired by work on machine psychology for generative AI</small></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
